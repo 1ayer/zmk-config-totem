@@ -15,15 +15,63 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        wr {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <3 1>;
+        };
+
+        xv {
+            bindings = <&kp RCTRL>;
+            key-positions = <24 22>;
+        };
+
+        uo {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <6 8>;
+        };
+
+        mdot {
+            bindings = <&kp RCTRL>;
+            key-positions = <27 29>;
+        };
+    };
+
+    behaviors {
+        nlt: nlt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NLT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+        };
+
+        nmt: nmt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NMT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         base {
             bindings = <
-                &kp Q       &kp W           &kp E        &kp R        &kp T        &kp Y        &kp U            &kp I         &kp O           &kp P
-                &mt LCMD A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H        &mt LSHFT J      &mt LCTRL K   &mt LEFT_ALT L  &mt LCMD SQT
-&kp LEFT_SHIFT  &kp Z       &kp X           &kp C        &kp V        &kp B        &kp N        &kp M            &kp COMMA     &kp DOT         &kp FSLH      &kp LEFT_SHIFT
-                                            &kp ESCAPE   &lt 3 SPACE  &lt 5 TAB    &lt 4 ENTER  &lt 1 BACKSPACE  &lt 2 DELETE
+                &kp Q        &kp W            &kp E         &kp R         &kp T         &kp Y         &kp U             &kp I          &kp O            &kp P
+                &nmt LCMD A  &nmt LEFT_ALT S  &nmt LCTRL D  &nmt LSHFT F  &kp G         &kp H         &nmt LSHFT J      &nmt LCTRL K   &nmt LEFT_ALT L  &nmt LCMD SQT
+&kp LEFT_SHIFT  &kp Z        &kp X            &kp C         &kp V         &kp B         &kp N         &kp M             &kp COMMA      &kp DOT          &kp FSLH       &kp LEFT_SHIFT
+                                              &kp ESCAPE    &nlt 3 SPACE  &nlt 5 TAB    &nlt 4 ENTER  &nlt 1 BACKSPACE  &nlt 2 DELETE
             >;
         };
 
@@ -73,12 +121,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        device {
-            if-layers = <5 5>;
-            then-layer = <5>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
