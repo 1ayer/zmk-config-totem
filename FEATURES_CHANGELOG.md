@@ -28,4 +28,11 @@ Enabled:
 - Added custom hold-tap behavior definitions in `config/totem.keymap`:
   - `nlt`
   - `nmt`
+- Kept the same full combo set from Commit B (`wr`, `xv`, `uo`, `mdot`)
 - No per-layer binding changes in this commit
+
+## Commit D - Enable ZMK Studio
+
+Enabled:
+- Re-enabled `CONFIG_ZMK_STUDIO=y` in `config/totem.conf`
+- Re-enabled `CONFIG_ZMK_STUDIO_LOCKING=n` in `config/totem.conf`
