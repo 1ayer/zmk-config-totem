@@ -38,3 +38,10 @@ Enabled:
 Enabled:
 - Re-enabled `CONFIG_ZMK_STUDIO=y` in `config/totem.conf`
 - Re-enabled `CONFIG_ZMK_STUDIO_LOCKING=n` in `config/totem.conf`
+
+## Commit E - Add Mouse Keys
+
+Enabled:
+- Added `mouse_layer` in `config/totem.keymap` using `&mkp`, `&mmv`, and `&msc`
+- Added `#include <dt-bindings/zmk/pointing.h>` in `config/totem.keymap`
+- Enabled `CONFIG_ZMK_POINTING=y` in `config/totem.conf`
