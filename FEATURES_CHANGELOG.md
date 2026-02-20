@@ -29,7 +29,9 @@ Enabled:
   - `nlt`
   - `nmt`
 - Kept the same full combo set from Commit B (`wr`, `xv`, `uo`, `mdot`)
-- No per-layer binding changes in this commit
+- Applied `nmt` to home-row mod-taps in `base_layer`
+- Applied `nlt` to thumb layer-tap keys in `base_layer`
+- `ESC` is mapped as `&nlt 7 ESC` (tap: ESC, hold: `mouse_layer`)
 
 ## Commit D - Enable ZMK Studio
 
