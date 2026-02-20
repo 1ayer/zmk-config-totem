@@ -19,3 +19,11 @@ Enabled:
 - Added one combo (`wr_combo`) in `config/totem.keymap`
 - Binding: key positions `<3 1>` -> `RIGHT_ALT`
 - Scope kept minimal to reduce compile risk
+
+## Commit C - Add Custom Behaviors
+
+Enabled:
+- Added custom hold-tap behavior definitions in `config/totem.keymap`:
+  - `nlt`
+  - `nmt`
+- No per-layer binding changes in this commit
