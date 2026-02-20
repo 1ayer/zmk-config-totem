@@ -16,9 +16,11 @@ Enabled:
 ## Commit B - Add Small Combo Set
 
 Enabled:
-- Added one combo (`wr_combo`) in `config/totem.keymap`
-- Binding: key positions `<3 1>` -> `RIGHT_ALT`
-- Scope kept minimal to reduce compile risk
+- Added all combos from original main keymap in `config/totem.keymap`:
+  - `wr` (`<3 1>` -> `RIGHT_ALT`)
+  - `xv` (`<24 22>` -> `RCTRL`)
+  - `uo` (`<6 8>` -> `RIGHT_ALT`)
+  - `mdot` (`<27 29>` -> `RCTRL`)
 
 ## Commit C - Add Custom Behaviors
 

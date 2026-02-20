@@ -44,10 +44,24 @@
     combos {
         compatible = "zmk,combos";
 
-        wr_combo {
-            timeout-ms = <50>;
+        wr {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <3 1>;
+        };
+
+        xv {
+            bindings = <&kp RCTRL>;
+            key-positions = <24 22>;
+        };
+
+        uo {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <6 8>;
+        };
+
+        mdot {
+            bindings = <&kp RCTRL>;
+            key-positions = <27 29>;
         };
     };
 
