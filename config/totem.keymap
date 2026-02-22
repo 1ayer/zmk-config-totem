@@ -96,10 +96,10 @@
 
         nav {
             bindings = <
-        &mkp MB4        &mkp MB3        &mkp MB2      &mkp MB1         &mkp MB5    &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO
-        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans      &kp CLCK    &kp LEFT     &kp DOWN    &kp UP     &kp RIGHT
-&trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans      &kp INS     &kp HOME     &kp PG_DN   &kp PG_UP  &kp END     &trans
-                                        &trans        &trans           &trans      &kp RET     &kp BSPC     &kp DEL
+        &trans  &trans  &trans  &trans  &trans    &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO
+        &trans  &trans  &trans  &trans  &trans    &kp CLCK    &kp LEFT     &kp DOWN    &kp UP     &kp RIGHT
+&trans  &trans  &trans  &trans  &trans  &trans    &kp INS     &kp HOME     &kp PG_DN   &kp PG_UP  &kp END     &trans
+                        &trans  &trans  &trans    &kp RET     &kp BSPC     &kp DEL
             >;
         };
 
