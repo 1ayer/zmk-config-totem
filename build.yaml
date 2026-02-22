@@ -22,9 +22,12 @@ include:
   - board: xiao_ble
     shield: totem_left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_BLE=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+    artifact-name: totem_left_B
   - board: xiao_ble
     shield: totem_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_BLE=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: totem_right_B
   - board: xiao_ble
     shield: settings_reset
+    artifact-name: settings_reset_B
 # there is no settingsreset (needed) for the XIAO
