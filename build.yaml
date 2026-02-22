@@ -21,14 +21,13 @@
 include:
   - board: xiao_ble
     shield: totem_left
-    snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_BLE=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
-    artifact-name: totem_left_diag
+    artifact-name: totem_left_diag_lite
   - board: xiao_ble
     shield: totem_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_BLE=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-    artifact-name: totem_right_diag
+    artifact-name: totem_right_diag_lite
   - board: xiao_ble
     shield: settings_reset
-    artifact-name: settings_reset_diag
+    artifact-name: settings_reset_diag_lite
 # there is no settingsreset (needed) for the XIAO
