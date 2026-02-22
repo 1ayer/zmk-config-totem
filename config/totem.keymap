@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 
 /*
  * Baseline minimal keymap for stable split bring-up.
@@ -74,7 +73,7 @@
                 &kp Q      &kp W      &kp E      &kp R      &kp T      &kp Y      &kp U      &kp I       &kp O        &kp P
                 &nmt LCMD A  &nmt LEFT_ALT S  &nmt LCTRL D  &nmt LSHFT F  &kp G  &kp H  &nmt LSHFT J  &nmt LCTRL K  &nmt LEFT_ALT L  &nmt LCMD SQT
                 &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B      &kp N      &kp M       &kp COMMA    &kp DOT      &kp FSLH     &kp RSHFT
-                                           &out OUT_TOG  &nlt 3 TAB  &nlt 1 SPACE  &nlt 4 ENTER  &nlt 5 BSPC  &nlt 2 DEL
+                                           &nlt 7 ESC  &nlt 3 TAB  &nlt 1 SPACE  &nlt 4 ENTER  &nlt 5 BSPC  &nlt 2 DEL
             >;
         };
 
