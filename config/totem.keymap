@@ -38,6 +38,21 @@
             bindings = <&kp RCTRL>;
             key-positions = <27 29>;
         };
+
+        nRalt {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <17 18>;
+        };
+
+        nRctrl {
+            bindings = <&kp RCTRL>;
+            key-positions = <7 8>;
+        };
+
+        nm {
+            bindings = <&kp B>;
+            key-positions = <26 27>;
+        };
     };
 
     behaviors {
@@ -69,10 +84,10 @@
 
         base {
             bindings = <
-                &kp Q        &kp W            &kp E         &kp R         &kp T      &kp Y         &kp U             &kp I          &kp O            &kp P
-                &nmt LCMD A  &nmt LEFT_ALT S  &nmt LCTRL D  &nmt LSHFT F  &kp G      &kp H         &nmt LSHFT J      &nmt LCTRL K   &nmt LEFT_ALT L  &nmt LCMD SQT
-&kp LEFT_SHIFT  &kp Z        &kp X            &kp C         &kp V         &kp B      &kp N         &kp M             &kp COMMA      &kp DOT          &kp FSLH       &kp LEFT_SHIFT
-                                              &kp ESCAPE    &nlt 4 SPACE  &kp TAB    &nlt 3 ENTER  &nlt 1 BACKSPACE  &nlt 2 DELETE
+                &kp Q        &kp W         &kp E         &kp R            &kp T      &kp Y         &kp U             &kp I          &kp O         &kp P
+                &nmt LCMD A  &nmt LSHFT S  &nmt LCTRL D  &nmt LEFT_ALT F  &kp G      &kp H         &nmt LEFT_ALT J   &nmt LCTRL K   &nmt LSHFT L  &nmt LCMD SQT
+&kp LEFT_SHIFT  &kp Z        &kp X         &kp C         &kp V            &kp B      &kp N         &kp M             &kp COMMA      &kp DOT       &kp FSLH       &kp LEFT_SHIFT
+                                           &kp ESCAPE    &nlt 4 SPACE     &kp TAB    &nlt 3 ENTER  &nlt 1 BACKSPACE  &nlt 2 DELETE
             >;
         };
 
@@ -126,7 +141,7 @@
         compatible = "zmk,conditional-layers";
 
         device {
-            if-layers = <1 2>;
+            if-layers = <1 3>;
             then-layer = <5>;
         };
     };
