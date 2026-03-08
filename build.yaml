@@ -19,13 +19,13 @@
 #
 ---
 include:
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: totem_left
     artifact-name: totem_left_C
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: totem_right
     artifact-name: totem_right_C
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: settings_reset
     artifact-name: settings_reset_C
 # there is no settingsreset (needed) for the XIAO
